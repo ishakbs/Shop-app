@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@plugin "@midudev/tailwind-animations";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
