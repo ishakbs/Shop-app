@@ -3,6 +3,7 @@ import Navbar from "../component/navbar"
 import Hero from "../component/hero"
 import Footer from "../component/footer"
 import products from "../component/data"
+import type { Product } from "../src/types";
 
 const Home = () => {
 
@@ -17,7 +18,7 @@ const Home = () => {
           Our Products
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.slice(0, 6).map((product) => (
+          {products.slice(0, 6).map((product: Product) => (
             <Card
               key={product.id}
               title={product.title}

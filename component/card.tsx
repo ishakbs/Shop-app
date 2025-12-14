@@ -1,5 +1,7 @@
-const Card = ({ title, description, price, img }) => {
-    return (
+import type { CardProps } from "../src/types";
+
+const Card = ({ title, description, price, img }: CardProps) => {
+  return (
         <div className="m-2 mx-auto max-w-sm rounded-2xl bg-white p-6 text-black shadow-md transform transition duration-700 hover:-translate-y-1">
             <div className="flex flex-col items-center space-y-2">
                 <img src={img} alt={title} className="bg-white w-full h-48" />

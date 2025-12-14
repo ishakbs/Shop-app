@@ -1,6 +1,7 @@
 import Card from "../component/card";
 import products from "../component/data";
 import Navbar from "../component/navbar";
+import type { Product } from "../src/types";
 
 const Shop = () => {
   return (
@@ -13,7 +14,7 @@ const Shop = () => {
         </h2>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {products.map((product) => (
+          {products.slice(0, 6).map((product: Product) => (
             <Card
               key={product.id}
               title={product.title}
