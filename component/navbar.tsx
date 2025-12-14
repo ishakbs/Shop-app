@@ -14,8 +14,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="fixed top-4 left-1/2  -translate-x-1/2 z-50 w-[95%] max-w-5xl ">
-      <div className="backdrop-blur-lg bg-black/30  shadow-md rounded-3xl max-w-7xl mx-auto px-6">
+    <nav className="fixed top-7 left-1/2  -translate-x-1/2 z-50 w-[95%] max-w-5xl ">
+      <div className="backdrop-blur-lg bg-black/30  shadow-md rounded-3xl max-w-7xl mx-auto py-1 px-6">
         <div className={`
     flex justify-between items-center max-w-7xl mx-auto
     transition-all duration-300
@@ -39,7 +39,7 @@ const Navbar = () => {
             <button
               aria-label="Toggle menu"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-black focus:outline-none"
+              className="text-white focus:outline-none"
             >
               {/* Hamburger icon */}
               <svg
